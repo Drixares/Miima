@@ -19,7 +19,7 @@ module.exports = {
     .setDescription(`Le codeblock est une fonctionnalité qui permet d'afficher du code de manière lisible et propre. 
     \nC'est un markdown fournit par Discord qui est déjà intégré à votre application. 
     \nPour l'utiliser, veuillez respecter la syntaxe suivante :`)
-    .setImage('https://i.imgur.com/FSIVenX.png')
+    .setImage('https://i.imgur.com/vkEvoL3.png')
     .setTimestamp()
     .setFooter({ text: `Demandé par ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL() });
 

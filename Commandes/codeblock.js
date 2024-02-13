@@ -14,7 +14,7 @@ module.exports = {
     
     const embed = new EmbedBuilder()
     .setColor(bot.color.default)
-    .setTitle(`${interaction.guild.emojis.cache.get('1206360037669470340')} Le Codeblock`)
+    .setTitle(`${interaction.guild.emojis.cache.get('1206360037669470340')}  Qu'est-ce qu'un codeblock ? `)
     .setThumbnail(bot.user.displayAvatarURL())
     .setDescription(`Le codeblock est une fonctionnalité qui permet d'afficher du code de manière lisible et propre. 
     \nC'est un markdown fournit par Discord qui est déjà intégré à votre application. 

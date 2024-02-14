@@ -51,7 +51,7 @@ module.exports = {
       return await interaction.editReply({content: '**Vidéos trouvées !**', embeds: [Embed]})
 
     } catch(err) {
-      return await interaction.editReply(err.message) 
+      return await interaction.editReply(` \`${err.message}\` `) 
     }
   }
 

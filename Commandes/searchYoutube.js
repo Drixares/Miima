@@ -23,7 +23,7 @@ module.exports = {
       let Embed = new EmbedBuilder()
       .setColor(bot.color.default)
       .setAuthor({name: 'Youtube', url: 'https://youtube.com'})
-      .setTitle(`Résultats (10 vidéos) :`)
+      .setTitle(`Results (10 videos) :`)
       .setFooter({text: `Démandé par ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL()})
       .setTimestamp()
       
@@ -40,7 +40,7 @@ module.exports = {
       const data = await fetch(searchURL + new URLSearchParams(options))
       const { items } = await data.json()
       
-      let reponse = ``
+      let reponse = `Results for the search : \`${query}\` \n\n`
       items.forEach(video => {
         const videoURL = 'https://www.youtube.com/watch?v=' + video.id.videoId
         reponse += `**${video.snippet.channelTitle}** :\n [${video.snippet.title}](${videoURL})\n\n`

@@ -19,10 +19,10 @@ module.exports = {
       let Embed = new EmbedBuilder()
         .setColor(bot.color.default)
         .setAuthor({name: 'Owner : ' + owner.user.username, iconURL: owner.user.displayAvatarURL()})
-        .setTitle('Informations about Miima')
+        .setTitle(`Informations about ${bot.user.username}`)
         .setThumbnail(bot.user.displayAvatarURL())
         .setDescription(`
-        Miima est un bot créé pour aider et faciliter l'apprentissage pour le groupe de Coding de première année à l'IIM Digital School.\n
+        ${bot.user.tag} est un bot créé pour aider et faciliter l'apprentissage pour le groupe de Coding de première année à l'IIM Digital School.\n
         C'est un bot codé avec Nodejs et Discordjs par Mattéo (.unknown78) en collaboration avec Nicolas (miicolas).\n
         Son code source est disponible dans ce [repository Github](https://github.com/Drixares/Miima).`)
         .setTimestamp()

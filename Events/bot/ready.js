@@ -10,7 +10,7 @@ module.exports = {
         await bot.application.commands.set(bot.commands.map(command => command.data))
         console.log(`[Interaction] => loaded`)
 
-        bot.user.setActivity("over the world !", { type: ActivityType.Watching })
+        bot.user.setActivity("the last commit", { type: ActivityType.Watching })
         console.log(`${bot.user.username} is online`);
     }
 };

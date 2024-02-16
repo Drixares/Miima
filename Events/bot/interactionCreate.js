@@ -1,6 +1,5 @@
 const { Events, InteractionType, PermissionsBitField } = require("discord.js");
 
-
 module.exports = {
 
   name: Events.InteractionCreate,
